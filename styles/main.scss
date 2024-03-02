@@ -33,14 +33,28 @@ h1 {
 	position: relative;
 	top: 3.125rem;
 	@include tablet {
-		/**
-			TODO: Fix me
-		**/
+			flex-direction: row;
+		
+		
 	}
 	@include desktop {
-		/**
-			TODO: Fix me
-		**/
+			flex-direction: row;
+	}
+	.left-container{
+		@include tablet{
+			width: 30%;
+		}
+		@include desktop{
+			width: 30%;
+		}
+	}
+	.right-container{
+		@include tablet{
+			width: 70%;
+		}
+		@include desktop{
+			width: 70%;
+		}
 	}
 }
 
@@ -52,9 +66,7 @@ h1 {
 	background: $linkedin-accent-blue;
 	border-radius: 0.3125rem;
 	@include tablet {
-		/**
-			TODO: Fix me
-		**/
+
 	}
 	@include desktop {
 		/**
