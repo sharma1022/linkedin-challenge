@@ -11,40 +11,40 @@ for(let el of usernames) {
 job.innerHTML = "Registered Psychologist";
 
 
-const  commentsArr = [];
+// const  commentsArr = [];
 
-const displayComment = () => {
-    const post = document.querySelector(".posts__item");
-    commentsArr.forEach((comment) => {
-        const commentName = document.createElement('div');
-        commentName.classList.add("posts__username");
-        commentName.innerText = comment.name;
-        post.appendChild(commentName);
+// const displayComment = () => {
+//     const post = document.querySelector(".posts__item");
+//     commentsArr.forEach((comment) => {
+//         const commentName = document.createElement('div');
+//         commentName.classList.add("posts__username");
+//         commentName.innerText = comment.name;
+//         post.appendChild(commentName);
 
-        const commentContent = document.createElement("div");
-        commentContent.classList.add("posts__content");
+//         const commentContent = document.createElement("div");
+//         commentContent.classList.add("posts__content");
 
-        const commentBody = document.createElement("p");
-        commentBody.innerText = comment.txt;
-        commentContent.appendChild(commentBody);
+//         const commentBody = document.createElement("p");
+//         commentBody.innerText = comment.txt;
+//         commentContent.appendChild(commentBody);
 
-        const likeButton = documet.createElement("div");
-        likeButton.classList.add("posts__like");
-        likeButton.innerHTML = `<button>Like</button>`;
-        post.appendChild(likeButton);
-    })
-}
+//         const likeButton = documet.createElement("div");
+//         likeButton.classList.add("posts__like");
+//         likeButton.innerHTML = `<button>Like</button>`;
+//         post.appendChild(likeButton);
+//     })
+// }
 
-const postButton = document.querySelector(".post__button");
+// const postButton = document.querySelector(".post__button");
 
-postButton.addEventListener("click", (postObj) => {
-    postObj.preventDefault();
+// postButton.addEventListener("click", (postObj) => {
+//     postObj.preventDefault();
 
-    const newComment = {};
-    const commentTxt = document.querySelector(".comment__input");
-    newComment.txt = postObj.target.name.value;
+//     const newComment = {};
+//     const commentTxt = document.querySelector(".comment__input");
+//     newComment.txt = postObj.target.name.value;
 
-    commentsArr.unshift(newComment);
-    displayComment();
-} )
+//     commentsArr.unshift(newComment);
+//     displayComment();
+// } )
 
